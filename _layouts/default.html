@@ -5,9 +5,10 @@
 {% seo %}
 </head>
 <body>
+  <img src="images/image.png">
+
     <div class="birds-box">
       <div class="container">
-
         <img src="images/gunduwa-logo.svg">
       </div>
 
@@ -27,14 +28,19 @@
       		<div class="bird bird--four"></div>
       	</div>
 
+        <a class="btn-lg" href="#sample">
+                                  <i class='glyphicon glyphicon-arrow-down 3x'></i>
+                              </a>
+
+
       </div>
-      {% include nav.html %}
 
 
 
       <div class="container">
 
     {{ content }}
+    {% include nav.html %}
 
   </div>
 {% include scripts.html %}
