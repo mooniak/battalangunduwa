@@ -5,13 +5,37 @@
 {% seo %}
 </head>
 <body>
-  {% include nav.html %}
-  <div class="container">
-    <h1>
-      <a href="./">
-      </a>
-    </h1>
+    <div class="birds-box">
+      <div class="container">
+
+        <img src="images/gunduwa-logo.svg">
+      </div>
+
+      	<div class="bird-container bird-container--one">
+      		<div class="bird bird--one"></div>
+      	</div>
+
+      	<div class="bird-container bird-container--two">
+      		<div class="bird bird--two"></div>
+      	</div>
+
+      	<div class="bird-container bird-container--three">
+      		<div class="bird bird--three"></div>
+      	</div>
+
+      	<div class="bird-container bird-container--four">
+      		<div class="bird bird--four"></div>
+      	</div>
+
+      </div>
+      {% include nav.html %}
+
+
+
+      <div class="container">
+
     {{ content }}
+
   </div>
 {% include scripts.html %}
 </body>

@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanssinhala.css);
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
 
 
 body {
-    font: 20px/1.5 'ManameInformal',  sans-serif;
+    font: 20px/1.5 'Abhaya Libre',  sans-serif;
     margin: 2rem 0 5rem;
     color: #333;
     background: rgb(255, 251, 247);
@@ -10,7 +11,7 @@ body {
 
 @media (min-width: 30rem) {
     body {
-        margin-top: 5rem;
+        margin-top: 0rem;
     }
 }
 
@@ -184,6 +185,7 @@ pre > code {
     position: absolute;
 }
 
+
 .btn {
     border: 1px solid #555;
     padding: 2px 4px;
@@ -191,17 +193,19 @@ pre > code {
     color: #555;
     display: block;
     text-align: center;
-    max-width: 200px;
+    max-width: 440px;
     margin: 10px 0px;
-    font-family: Yaldevi-old;
+    margin: 34px auto;
+    font-family: 'Noto Sans Sinhala', serif;
+
 }
 
 .btn-big {
     border: 1px solid #555;
-    padding: 2px 4px;
+    padding: 22px 24px;
     text-transform: lowercase;
     color: #555;
-}
+    }
 
 .btn:hover {
     text-decoration: none;
@@ -258,4 +262,187 @@ background-size: contain;
 #footer {
     border-top: 1px solid #000;
     margin-top: 50px;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.birds-box {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	// min-height: 100vh;
+	min-height: 23rem;
+}
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+
+	&--one {
+		animation-duration: 1s;
+		animation-delay: -0.5s;
+	}
+
+	&--two {
+		animation-duration: 0.9s;
+		animation-delay: -0.75s;
+	}
+
+	&--three {
+		animation-duration: 1.25s;
+		animation-delay: -0.25s;
+	}
+
+	&--four {
+		animation-duration: 1.1s;
+		animation-delay: -0.5s;
+	}
+
+}
+
+.bird-container {
+	position: absolute;
+	top: 20%;
+	left: -7.5vw;
+	transform: scale(0);
+	will-change: transform;
+
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	&--one {
+		animation-duration: 15s;
+		animation-delay: 0;
+	}
+
+	&--two {
+		animation-duration: 16s;
+		animation-delay: 1s;
+	}
+
+	&--three {
+		animation-duration: 14.6s;
+		animation-delay: 9.5s;
+	}
+
+	&--four {
+		animation-duration: 16s;
+		animation-delay: 10.25s;
+	}
+
+}
+
+@keyframes fly-cycle {
+
+	100% {
+		background-position: -900px 0;
+	}
+
+}
+
+@keyframes fly-right-one {
+
+	0% {
+		left: -10%;
+		transform: scale(0.3);
+	}
+
+	10% {
+		left: 10%;
+		transform: translateY(2vh) scale(0.4);
+	}
+
+	20% {
+		left: 30%;
+		transform: translateY(0vh) scale(0.5);
+	}
+
+	30% {
+		left: 50%;
+		transform: translateY(4vh) scale(0.6);
+	}
+
+	40% {
+		left: 70%;
+		transform: translateY(2vh) scale(0.6);
+	}
+
+	50% {
+		left: 90%;
+		transform: translateY(0vh) scale(0.6);
+	}
+
+	60% {
+		left: 110%;
+		transform: translateY(0vh) scale(0.6);
+	}
+
+	100% {
+		left: 110%;
+		opacity: 1;
+		transform: translateY(0vh) scale(0.6);
+	}
+
+}
+
+@keyframes fly-right-two {
+
+	0% {
+		left: -10%;
+		opacity: 1;
+		transform: translateY(-2vh) scale(0.5);
+	}
+
+	10% {
+		left: 10%;
+		transform: translateY(0vh) scale(0.4);
+	}
+
+	20% {
+		left: 30%;
+		transform: translateY(-4vh) scale(0.6);
+	}
+
+	30% {
+		left: 50%;
+		transform: translateY(1vh) scale(0.45);
+	}
+
+	40% {
+		left: 70%;
+		transform: translateY(-2.5vh) scale(0.5);
+	}
+
+	50% {
+		left: 90%;
+		transform: translateY(0vh) scale(0.45);
+	}
+
+	51% {
+		left: 110%;
+		transform: translateY(0vh) scale(0.45);
+	}
+
+	100% {
+		left: 110%;
+		transform: translateY(0vh) scale(0.45);
+	}
+
 }
