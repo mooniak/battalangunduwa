@@ -1,5 +1,5 @@
 # Site settings
-title:
+title: බත්තලංගුණ්ඩුව
 description:
 baseurl:
 url:
@@ -11,7 +11,7 @@ facebook:
  app_id: 1821346694770413
 logo:
 social:
-  name: Textual
+  name:
   links:
     - https://instagram.com/textual.works
     - https://www.facebook.com/textualworks

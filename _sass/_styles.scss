@@ -31,7 +31,7 @@ nav {
 }
 
 a {
-    color: red;
+    color: #ab0000;
     text-decoration: none;
 }
 
@@ -194,11 +194,9 @@ pre > code {
     display: block;
     text-align: center;
     max-width: 440px;
-    margin: 10px 0px;
-    margin: 34px auto;
+    margin: 50px auto 10px auto ;
     font-family: 'Noto Sans Sinhala', serif;
     transition: all 1s ease;
-
 }
 
 .btn-big {
@@ -206,72 +204,38 @@ pre > code {
     padding: 22px 24px;
     text-transform: lowercase;
     color: #555;
-    }
+}
 
 .btn:hover {
     text-decoration: none;
     background: #fff;
     color: #000;
     border: 2px solid #000;
-    transform: rotate(-3deg);
+    margin: 50px auto 10px auto ;
+    transform: rotate(-0deg) scaleX(1.15) scaleY(1.15) ;
+}
 
-
+.price-lable{
+    font-family: 'Noto Sans Sinhala', serif;
+    font-size: 0.7rem;
+    color: #999;
+    margin: 0px auto 34px auto ;
 }
 
 input {
     margin-bottom: 10px;
 }
 
-
-.download-box-link{
-padding: 30px;
-margin: 25px 0px 25px 0px;
-display: block;
-  text-decoration: none;
-  background: url(../images/arrow.svg)  #ffebcc;
-  background-repeat: no-repeat;
-background-size: contain;
--o-transition:.5s;
- -ms-transition:.5s;
- -moz-transition:.5s;
- -webkit-transition:.5s;
- -webkit-box-shadow: 2px 3px 5px -1px rgba(176,174,176,1);
--moz-box-shadow: 2px 3px 5px -1px rgba(176,174,176,1);
-box-shadow: 2px 3px 5px -1px rgba(176,174,176,1);
+.footer {
+    border-top: 2px solid #888;
+    margin-top: 70px;
+    padding: 20px;
+    text-align: center;
 }
-
-
-.download-box-link:hover{
-  background: url(../images/arrow.svg)  #ffec1e;
-  background-repeat: no-repeat;
-background-size: contain;
-  text-decoration: none;
-  -o-transition:.5s;
- -ms-transition:.5s;
- -moz-transition:.5s;
- -webkit-transition:.5s;
- -webkit-box-shadow: 2px 3px 5px -1px rgba(176,174,176,1);
--moz-box-shadow: 2px 3px 5px -1px rgba(176,174,176,1);
-box-shadow: 2px 3px 5px -1px rgba(176,174,176,1);
-    transform: rotate(-2deg);
+.footer a {
+    color: red;
+    text-decoration: none;
 }
-
-
-.highlight-box{
-  border: 1px solid;
-padding: 15px 30px 30px 30px;
-margin: 25px 0px 25px 0px;
-display: block;
-background-size: contain;
-}
-
-#footer {
-    border-top: 1px solid #000;
-    margin-top: 50px;
-}
-
-
-
 
 *,
 *::before,
@@ -295,7 +259,6 @@ background-size: contain;
 	width: 88px;
 	height: 125px;
 	will-change: background-position;
-
 	animation-name: fly-cycle;
 	animation-timing-function: steps(10);
 	animation-iteration-count: infinite;
